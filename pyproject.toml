@@ -63,12 +63,12 @@ build-frontend = "build"
 
 [[tool.cibuildwheel.overrides]]
 select = ["*-manylinux_*"]
-before-all = "yum -y install curl-devel openssl-devel gettext"
+before-all = "yum -y install curl-devel openssl-devel"
 
 [[tool.cibuildwheel.overrides]]
 select = ["*-manylinux_armv7l"]
-before-all = "apt-get -y update && apt-get -y install -y libcurl4-openssl-dev libssl-dev gettext"
+before-all = "apt-get -y update && apt-get -y install -y libcurl4-openssl-dev libssl-dev"
 
 [[tool.cibuildwheel.overrides]]
 select = ["*-musllinux_*"]
-before-all = "apk add gzip curl-dev openssl-dev gettext"
+before-all = "apk add gzip curl-dev openssl-dev"
