@@ -3,7 +3,7 @@ requires = ["xmake-python >= 0.1.7"]
 build-backend = "xmake_python"
 
 [project]
-name = 'git'
+name = 'git-wheel'
 version = '2.50.1'
 description = "fast, scalable, distributed revision control system"
 readme = 'README.md'
